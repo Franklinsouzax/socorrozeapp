@@ -9,7 +9,7 @@ import {
 export default function Home(){
     return(
         <View>
-
+            <Text>Aqui você encontra seu perfil</Text>
 
             
         </View>
