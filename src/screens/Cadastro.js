@@ -3,12 +3,13 @@ import {
     SafeAreaView,
     StyleSheet,
     Text,
-    View
+    View,
+    TextInput
 
 } from "react-native";
 
 import { useState } from "react";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import { TouchableOpacity, GestureHandlerRootView } from "react-native-gesture-handler";
 
 
 
@@ -25,10 +26,11 @@ export default function Cadastro() {
 
 
     return (
+        <GestureHandlerRootView>
         <SafeAreaView style={styles.container}>
             <Text style={styles.cadastroTitle}>FAÇA SEU CADASTO</Text>
             <View style={styles.containerCadastro}>
-                <Text style={inputLabel}>Nome Completo</Text>
+                <Text style={styles.inputLabel}>Nome Completo</Text>
                 <TextInput
                     style={styles.cadastroInput}
                     value={nome}
@@ -39,7 +41,7 @@ export default function Cadastro() {
 
                 />
 
-                <Text style={inputLabel}>Telefone</Text>
+                <Text style={styles.inputLabel}>Telefone</Text>
                 <TextInput
                     style={styles.cadastroInput}
                     value={telefone}
@@ -50,7 +52,7 @@ export default function Cadastro() {
 
                 />
 
-                <Text style={inputLabel}>E-mail</Text>
+                <Text style={styles.inputLabel}>E-mail</Text>
                 <TextInput
                     style={styles.cadastroInput}
                     value={email}
@@ -61,7 +63,7 @@ export default function Cadastro() {
 
                 />
 
-                <Text style={inputLabel}>Crie uma Senha</Text>
+                <Text style={styles.inputLabel}>Crie uma Senha</Text>
                 <TextInput
                     style={styles.cadastroInput}
                     value={senha}
@@ -73,7 +75,7 @@ export default function Cadastro() {
 
                 />
 
-                <Text style={inputLabel}>Confirme sua senha</Text>
+                <Text style={styles.inputLabel}>Confirme sua senha</Text>
                 <TextInput
                     style={styles.cadastroInput}
                     value={telefone}
@@ -90,6 +92,7 @@ export default function Cadastro() {
             </View>
 
         </SafeAreaView>
+        </GestureHandlerRootView>
     )
 }
 

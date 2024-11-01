@@ -1,15 +1,21 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+
+
 import { Ionicons } from '@expo/vector-icons';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+
+
 import Welcome from './src/screens/Welcome';
 import Login from './src/screens/Login';
 import Cadastro from './src/screens/Cadastro';
 import Home from './src/screens/Home';
 
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 
 
 const Tab = createBottomTabNavigator();

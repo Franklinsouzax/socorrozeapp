@@ -10,7 +10,7 @@ export default function Login(){
     return(
         <View>
             <Text>Preencha seus dados para Entrar!</Text>
-
+            
             
         </View>
     )
